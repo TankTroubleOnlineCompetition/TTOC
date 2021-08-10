@@ -15,24 +15,33 @@
 */
 
 /* TODO: Have custom theme for users with preferred colour scheme set to dark */
-/*
+:root {
+    --dflt-purple: #6e25a4;
+    --dflt-yellow: #F1C439;
+}
 @media (prefers-color-scheme: dark) {
     :root {
-        --first-theme-colour: #fff;
+        --first-theme-colour: #1e1f24;
         --sec-theme-colour: #000;
 
-        --yellow: #F1C439; 
-        --purple: #6e25a4;
+        --yellow: #987a19; 
+        --purple: #4c1575;
 
         --first-bg: var(--yellow);
-        --first-title: var(--purple);
+        --first-title: #000;
         --first-text: #000;
 
         --sec-bg: var(--purple);
-        --sec-title: var(--yellow);
+        --sec-title: #fff;
         --sec-text: #fff;
 
         --shadow-colour: #0000008a;
+    }
+    .btn.fbtn, .black.ttfont {
+        color: var(--sec-text) !important;
+    }
+    a.btn-dark, a.btn-light {
+        -webkit-text-stroke: 0 !important;
     }
 }
 
@@ -45,33 +54,21 @@
         --purple: #6e25a4;
 
         --first-bg: var(--yellow);
-        --first-title: var(--purple);
+        --first-title: #000;
         --first-text: #000;
 
         --sec-bg: var(--purple);
-        --sec-title: var(--yellow);
+        --sec-title: #fff;
         --sec-text: #fff;
 
         --shadow-colour: #0000008a;
     }
-}
-*/
-:root {
-    --first-theme-colour: #fff;
-    --sec-theme-colour: #000;
-
-    --yellow: #F1C439; 
-    --purple: #6e25a4;
-
-    --first-bg: var(--yellow);
-    --first-title: #000;/*var(--purple);*/
-    --first-text: #000;
-
-    --sec-bg: var(--purple);
-    --sec-title: #fff;/*var(--yellow);*/
-    --sec-text: #fff;
-
-    --shadow-colour: #0000008a;
+    h1, h2, a {
+        -webkit-text-stroke: 0 !important;
+    }
+    .main.brackets iframe {
+        filter: invert(1) brightness(1.25);
+    }
 }
 
 /* Add class noShadow to images that should not have the drop shadow */
@@ -120,6 +117,7 @@
 
 .yback h1, .yback h2, .yback a, .yback a:visited, .yback a:hover {
     color: var(--first-title);
+    -webkit-text-stroke: 0;
 }
 .pback h1, .pback h2, .pback a, .pback a:visited, .pback a:hover {
     color: var(--sec-title);
@@ -134,7 +132,7 @@
 }
 
 .whiteback h1, .whiteback h2, .whiteback a, .whiteback a:visited, .blackback a:hover  {
-    color: var(--purple);
+    color: var(--dflt-purple);
 }
 
 .whiteback p, .whiteback li {
@@ -142,7 +140,7 @@
 }
 
 .whiteback a:hover, .blackback h1, .blackback h2, .blackback p, .blackback a {
-    color: var(--yellow);
+    color: var(--dflt-yellow);
 }
 
 .blackback {
@@ -197,6 +195,7 @@ a {
     font-family: 'TankTrouble', sans-serif;
     text-decoration: none;
     font-size: 1rem;
+    -webkit-text-stroke: 1px black;
 }
 
 a:hover {
@@ -225,11 +224,13 @@ li {
 h1 {
     font-family: 'TankTrouble', sans-serif;
     font-size: 2rem;
+    -webkit-text-stroke: 1.5px black;
 }
 
 h2 {
     font-family: 'TankTrouble', sans-serif;
     font-size: 1.25rem;
+    -webkit-text-stroke: 1px black;
 }
 
 .ttfont {
@@ -261,11 +262,11 @@ h2 {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: var(--first-bg) ;
+    color: var(--dflt-yellow) ;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: var(--sec-bg);
+    color: var(--dflt-purple);
 }
 
 .rbtn {
@@ -382,11 +383,11 @@ hr {
 
 /* Manual */
 .purple {
-    color: var(--sec-bg) !important;
+    color: var(--dflt-purple) !important;
 }
 
 .yellow {
-    color: var(--first-bg)  !important;
+    color: var(--dflt-yellow)  !important;
 }
 
 .white {
