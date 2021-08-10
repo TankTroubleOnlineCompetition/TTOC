@@ -14,7 +14,6 @@
 // purple: #6e25a4
 */
 
-/* TODO: Have custom theme for users with preferred colour scheme set to dark */
 :root {
     --dflt-purple: #6e25a4;
     --dflt-yellow: #F1C439;
