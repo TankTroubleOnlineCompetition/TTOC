@@ -6,56 +6,33 @@
         TankTrouble Online Competition
     </title>
 
-    <link rel="icon" href="../media/icons/fav.png">
+    <link rel="icon" href="/media/icons/fav.png">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-        </script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script>
-        $(function () {
-            $.ajax({
-                type: 'GET',
-                url: 'templates/footer.html',
-                success: function (result) {
-                    $('#footer').append(result);
-                }
-            });
-            $.ajax({
-                type: 'GET',
-                url: 'templates/title.html',
-                success: function (result) {
-                    $.ajax({
-                        type: 'GET',
-                        url: 'templates/navbar.html',
-                        success: function (res) {
-                            $('#top').append([result, res]);
-                        }
-                    });
-
-                }
-            });
-        });
-    </script>
-    <link rel="stylesheet" href="../css/style.css">
+    <script src="/js/fetcher.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <a id="top"></a>
+    <div id="top"></div>
 
     <div class="main">
         <div class="yback row">
             <div class="col-sm-4 textdivmargin center divpad">
-                <img src="../media/special/trophy.png" loading="lazy">
+                <img src="/media/special/trophy.png" loading="lazy">
             </div>
 
             <div class="col-sm-4 textdivmargin divpad textpad">
@@ -72,7 +49,7 @@
             </div>
 
             <div class="col-sm-4 textdivmargin center divpad">
-                <img src="../media/special/trophy.png" loading="lazy">
+                <img src="/media/special/trophy.png" loading="lazy">
             </div>
         </div>
 
@@ -201,7 +178,7 @@
 
                 <div class="row">
                     <div class="col-sm-5 textdivmargin center divpad">
-                        <img src="../media/tanks/Renzore.png" loading="lazy">
+                        <img src="/media/tanks/Renzore.png" loading="lazy">
 
                         <h2 class="textpad center">
                             1st Place
@@ -215,7 +192,7 @@
                     </div>
 
                     <div class="col-sm-4 textdivmargin nopad center">
-                        <img src="../media/tanks/NelFusion.png" loading="lazy">
+                        <img src="/media/tanks/NelFusion.png" loading="lazy">
 
                         <h2 class="textpad center">
                             2nd Place
@@ -229,7 +206,7 @@
                     </div>
 
                     <div class="col-sm-3 textdivmargin nopad center">
-                        <img src="../media/tanks/CosmosAblaze.png" loading="lazy">
+                        <img src="/media/tanks/CosmosAblaze.png" loading="lazy">
 
                         <h2 class="textpad center">
                             3rd Place
@@ -259,7 +236,7 @@
 
                 <div class="row">
                     <div class="col-sm-5 textdivmargin center divpad">
-                        <img src="../media/tanks/Giraffe.png" loading="lazy">
+                        <img src="/media/tanks/Giraffe.png" loading="lazy">
 
                         <h2 class="textpad center">
                             1st Place
@@ -273,7 +250,7 @@
                     </div>
 
                     <div class="col-sm-4 textdivmargin nopad center">
-                        <img src="../media/tanks/CosmosAblaze.png" loading="lazy">
+                        <img src="/media/tanks/CosmosAblaze.png" loading="lazy">
 
                         <h2 class="textpad center">
                             2nd Place
@@ -287,7 +264,7 @@
                     </div>
 
                     <div class="col-sm-3 textdivmargin nopad center">
-                        <img src="../media/tanks/Renzore.png" loading="lazy">
+                        <img src="/media/tanks/Renzore.png" loading="lazy">
 
                         <h2 class="textpad center">
                             3rd Place
@@ -317,7 +294,7 @@
 
                 <div class="row">
                     <div class="col-sm-5 textdivmargin center divpad">
-                        <img src="../media/tanks/NelFusion.png" loading="lazy">
+                        <img src="/media/tanks/NelFusion.png" loading="lazy">
 
                         <h2 class="textpad center">
                             1st Place
@@ -331,7 +308,7 @@
                     </div>
 
                     <div class="col-sm-4 textdivmargin nopad center">
-                        <img src="../media/tanks/CosmosAblaze.png" loading="lazy">
+                        <img src="/media/tanks/CosmosAblaze.png" loading="lazy">
 
                         <h2 class="textpad center">
                             2nd Place
@@ -345,7 +322,7 @@
                     </div>
 
                     <div class="col-sm-3 textdivmargin nopad center">
-                        <img src="../media/tanks/5aucy.png" loading="lazy">
+                        <img src="/media/tanks/5aucy.png" loading="lazy">
 
                         <h2 class="textpad center">
                             3rd Place
@@ -375,7 +352,7 @@
 
                 <div class="row">
                     <div class="col-sm-5 textdivmargin center divpad">
-                        <img src="../media/tanks/NelFusion.png" loading="lazy">
+                        <img src="/media/tanks/NelFusion.png" loading="lazy">
 
                         <h2 class="textpad center">
                             1st Place
@@ -389,7 +366,7 @@
                     </div>
 
                     <div class="col-sm-4 textdivmargin nopad center">
-                        <img src="../media/tanks/Jellican.png" loading="lazy">
+                        <img src="/media/tanks/Jellican.png" loading="lazy">
 
                         <h2 class="textpad center">
                             2nd Place
@@ -403,7 +380,7 @@
                     </div>
 
                     <div class="col-sm-3 textdivmargin nopad center">
-                        <img src="../media/tanks/CosmosAblaze.png" loading="lazy">
+                        <img src="/media/tanks/CosmosAblaze.png" loading="lazy">
 
                         <h2 class="textpad center">
                             3rd Place
@@ -433,7 +410,7 @@
 
                 <div class="row">
                     <div class="col-sm-5 textdivmargin center divpad">
-                        <img src="../media/tanks/Rage.png" loading="lazy">
+                        <img src="/media/tanks/Rage.png" loading="lazy">
 
                         <h2 class="textpad center">
                             1st Place
@@ -448,7 +425,7 @@
 
                     <div class="col-sm-4 textdivmargin nopad center">
 
-                        <img src="../media/tanks/Raika_TheDestroyer.png" loading="lazy">
+                        <img src="/media/tanks/Raika_TheDestroyer.png" loading="lazy">
 
                         <h2 class="textpad center">
                             2nd Place
@@ -463,7 +440,7 @@
 
                     <div class="col-sm-3 textdivmargin nopad center">
 
-                        <img src="../media/tanks/Faint.png" loading="lazy">
+                        <img src="/media/tanks/Faint.png" loading="lazy">
 
                         <h2 class="textpad center">
                             3rd Place
@@ -493,7 +470,7 @@
 
                 <div class="row">
                     <div class="col-sm-5 textdivmargin center divpad">
-                        <img src="../media/tanks/FreeCandy-Tank.png" loading="lazy">
+                        <img src="/media/tanks/FreeCandy-Tank.png" loading="lazy">
 
                         <h2 class="textpad center">
                             1st Place
@@ -507,7 +484,7 @@
                     </div>
 
                     <div class="col-sm-4 textdivmargin nopad center">
-                        <img src="../media/tanks/supervolcano.png" loading="lazy">
+                        <img src="/media/tanks/supervolcano.png" loading="lazy">
 
                         <h2 class="textpad center">
                             2nd Place
@@ -521,7 +498,7 @@
                     </div>
 
                     <div class="col-sm-3 textdivmargin nopad center">
-                        <img src="../media/tanks/Spiros04.png" loading="lazy">
+                        <img src="/media/tanks/Spiros04.png" loading="lazy">
 
                         <h2 class="textpad center">
                             3rd Place
@@ -551,7 +528,7 @@
 
                 <div class="row">
                     <div class="col-sm-5 textdivmargin center divpad">
-                        <img src="../media/tanks/meemee.png" loading="lazy">
+                        <img src="/media/tanks/meemee.png" loading="lazy">
 
                         <h2 class="textpad center">
                             1st Place
@@ -565,7 +542,7 @@
                     </div>
 
                     <div class="col-sm-4 textdivmargin nopad center">
-                        <img src="../media/tanks/FreeCandy-Tank.png" loading="lazy">
+                        <img src="/media/tanks/FreeCandy-Tank.png" loading="lazy">
 
                         <h2 class="textpad center">
                             2nd Place
@@ -579,7 +556,7 @@
                     </div>
 
                     <div class="col-sm-3 textdivmargin nopad center">
-                        <img src="../media/tanks/supervolcano.png" loading="lazy">
+                        <img src="/media/tanks/supervolcano.png" loading="lazy">
 
                         <h2 class="textpad center">
                             3rd Place
@@ -611,7 +588,7 @@
                     <div class="col"></div>
 
                     <div class="col-sm-5 textdivmargin center divpad">
-                        <img src="../media/tanks/FreeCandy-Tank.png" loading="lazy">
+                        <img src="/media/tanks/FreeCandy-Tank.png" loading="lazy">
 
                         <h2 class="textpad center">
                             1st Place
@@ -625,7 +602,7 @@
                     </div>
 
                     <div class="col-sm-4 textdivmargin nopad center">
-                        <img src="../media/tanks/supervolcano.png" loading="lazy">
+                        <img src="/media/tanks/supervolcano.png" loading="lazy">
 
                         <h2 class="textpad center">
                             2nd Place
@@ -660,7 +637,7 @@
                     <div class="col"></div>
 
                     <div class="col-sm-5 textdivmargin center divpad">
-                        <img src="../media/tanks/FreeCandy-Tank.png" loading="lazy">
+                        <img src="/media/tanks/FreeCandy-Tank.png" loading="lazy">
 
                         <h2 class="textpad center">
                             1st Place
@@ -674,7 +651,7 @@
                     </div>
 
                     <div class="col-sm-4 textdivmargin nopad center">
-                        <img src="../media/tanks/meemee.png" loading="lazy">
+                        <img src="/media/tanks/meemee.png" loading="lazy">
 
                         <h2 class="textpad center">
                             2nd Place
@@ -706,7 +683,7 @@
 
                 <div class="row">
                     <div class="col-sm-5 textdivmargin center divpad">
-                        <img src="../media/tanks/5am.png" loading="lazy">
+                        <img src="/media/tanks/5am.png" loading="lazy">
 
                         <h2 class="textpad center">
                             1st Place
@@ -720,7 +697,7 @@
                     </div>
 
                     <div class="col-sm-4 textdivmargin nopad center">
-                        <img src="../media/tanks/george8888.png" loading="lazy">
+                        <img src="/media/tanks/george8888.png" loading="lazy">
 
                         <h2 class="textpad center">
                             2nd Place
@@ -734,7 +711,7 @@
                     </div>
 
                     <div class="col-sm-3 textdivmargin nopad center">
-                        <img src="../media/tanks/Raika_TheDestroyer.png" loading="lazy">
+                        <img src="/media/tanks/Raika_TheDestroyer.png" loading="lazy">
 
                         <h2 class="textpad center">
                             3rd Place
@@ -766,7 +743,7 @@
                     <div class="col"></div>
 
                     <div class="col-sm-5 textdivmargin center divpad">
-                        <img src="../media/tanks/captainahvong.png" loading="lazy">
+                        <img src="/media/tanks/captainahvong.png" loading="lazy">
 
                         <h2 class="textpad center">
                             1st Place
@@ -781,7 +758,7 @@
                     </div>
 
                     <div class="col-sm-4 textdivmargin nopad center">
-                        <img src="../media/tanks/meemee.png" loading="lazy">
+                        <img src="/media/tanks/meemee.png" loading="lazy">
 
                         <h2 class="textpad center">
                             2nd Place
@@ -817,7 +794,7 @@
 
                 <div class="row">
                     <div class="col-sm-5 textdivmargin center divpad">
-                        <img src="../media/tanks/Rediey.png" loading="lazy">
+                        <img src="/media/tanks/Rediey.png" loading="lazy">
 
                         <h2 class="textpad center">
                             1st Place
@@ -831,7 +808,7 @@
                     </div>
 
                     <div class="col-sm-4 textdivmargin nopad center">
-                        <img src="../media/tanks/bangbangshoota.png" loading="lazy">
+                        <img src="/media/tanks/bangbangshoota.png" loading="lazy">
 
                         <h2 class="textpad center">
                             2nd Place
@@ -846,7 +823,7 @@
 
                     <div class="col-sm-3 textdivmargin nopad center">
 
-                        <img src="../media/tanks/HydroDonkey.png" loading="lazy">
+                        <img src="/media/tanks/HydroDonkey.png" loading="lazy">
 
                         <h2 class="textpad center">
                             3rd Place
@@ -878,7 +855,7 @@
                     <div class="col"></div>
 
                     <div class="col-sm-5 textdivmargin center divpad">
-                        <img src="../media/tanks/Dalek-Buster.png" loading="lazy">
+                        <img src="/media/tanks/Dalek-Buster.png" loading="lazy">
 
                         <h2 class="textpad center">
                             Dalek-Buster
@@ -892,7 +869,7 @@
                     </div>
 
                     <div class="col-sm-4 textdivmargin nopad center">
-                        <img src="../media/tanks/Trabantt.png" loading="lazy">
+                        <img src="/media/tanks/Trabantt.png" loading="lazy">
 
                         <h2 class="textpad center">
                             Trabantt

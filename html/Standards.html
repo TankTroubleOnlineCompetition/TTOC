@@ -6,55 +6,33 @@
         TankTrouble Online Competition
     </title>
 
-    <link rel="icon" href="../media/icons/fav.png">
+    <link rel="icon" href="/media/icons/fav.png">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-        </script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script>
-        $(function () {
-            $.ajax({
-                type: 'GET',
-                url: 'templates/footer.html',
-                success: function (result) {
-                    $('#footer').append(result);
-                }
-            });
-            $.ajax({
-                type: 'GET',
-                url: 'templates/title.html',
-                success: function (result) {
-                    $.ajax({
-                        type: 'GET',
-                        url: 'templates/navbar.html',
-                        success: function (res) {
-                            $('#top').append([result, res]);
-                        }
-                    });
-                }
-            });
-        });
-    </script>
-    <link rel="stylesheet" href="../css/style.css">
+    <script src="/js/fetcher.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <a id="top"></a>
+    <div id="top"></div>
 
     <div class="main">
         <div class="pback row center">
             <div class="col-sm-4 textdivmargin center textpad divpad">
-                <img src="../media/tanks/alert.png" loading="lazy">
+                <img src="/media/tanks/alert.png" loading="lazy">
             </div>
 
             <div class="col-sm-4 textdivmargin divpad">
@@ -70,14 +48,14 @@
                 <p class="justify textpad">
                     In addition to these standards, the
                     <a href="https://bit.ly/TTStandards" target="_blank">
-                        TankTrouble Community Standards <img src="../media/special/SYA.png" loading="lazy">
+                        TankTrouble Community Standards <img src="/media/special/SYA.png" class="noShadow" loading="lazy">
                     </a>
                     must be followed throughout the Online Chat and the Forum at all times.
                 </p>
             </div>
 
             <div class="col-sm-4 textdivmargin center textpad divpad">
-                <img style="-webkit-transform: scaleX(-1);transform: scaleX(-1);" src="../media/tanks/alert.png"
+                <img style="-webkit-transform: scaleX(-1);transform: scaleX(-1);" src="/media/tanks/alert.png"
                     loading="lazy">
             </div>
         </div>
@@ -134,14 +112,14 @@
                         The
                         <a href="https://bit.ly/TTStandards" target="_blank">
                             TankTrouble Standards
-                            <img src="../media/special/SPA.png" loading="lazy">
+                            <img src="/media/special/SPA.png" class="noShadow" loading="lazy">
                         </a>
 
                         apply at all times, and the
 
                         <a href="Gamemodes.html">
                             Gamemode-specific Rules
-                            <img src="../media/special/SPA.png" loading="lazy">
+                            <img src="/media/special/SPA.png" class="noShadow" loading="lazy">
                         </a>
 
                         apply during all matches.
