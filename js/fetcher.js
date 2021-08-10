@@ -1,4 +1,9 @@
 (function(){
+    /*
+    if (window.location.host.endsWith('github.io')) {
+
+    }
+    */
     fetch('..html/templates/footer.html').then(response => response.text()).then(footer => {
         $('#footer').append(footer);
     });
