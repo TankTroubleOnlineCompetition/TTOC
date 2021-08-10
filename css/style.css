@@ -26,6 +26,8 @@
         --yellow: #987a19; 
         --purple: #4c1575;
 
+        --button-yellow: #c09e36;
+
         --first-bg: var(--yellow);
         --first-title: #000;
         --first-text: #000;
@@ -363,13 +365,13 @@ hr {
 }
 
 .yback .btn:hover {
-    background-color: var(--first-bg) ;
+    background-color: var(--first-bg);
     color: var(--sec-theme-colour)!important;
     border: 0.125rem solid var(--sec-theme-colour);
 }
 
 .pback .btn {
-    background-color: var(--first-bg) ;
+    background-color: var(--button-yellow);
     color: var(--sec-theme-colour) !important;
     border: 0.125rem solid var(--sec-theme-colour);
 }
