@@ -77,14 +77,14 @@
                 filter: invert(1) brightness(1.25);
     }
 }
-/*
+
 html {
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
 }
-*/
+
 /* Add class noShadow to images that should not have the drop shadow */
 .divpad img:not(.noShadow), canvas:not(.noShadow) { 
     -webkit-filter:drop-shadow(0.125rem 0.125rem 0.375rem var(--shadow-colour)); 
