@@ -12,6 +12,6 @@ For more information, head to the [About](https://samn-c.github.io/TTOC/html/Abo
 # Credits
 HTML by [samn-c](https://github.com/samn-c)
 
-3D images by [CommanderAnime](https://github.com/CommanderAnime/)
+3D images by [Commander](https://github.com/CommanderAnime/)
 
 2D images by Spiros04
