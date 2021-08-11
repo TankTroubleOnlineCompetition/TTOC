@@ -68,7 +68,8 @@
         -webkit-text-stroke: 0 !important;
     }
     .main.brackets iframe {
-        filter: invert(1) brightness(1.25);
+        -webkit-filter: invert(1) brightness(1.25);
+                filter: invert(1) brightness(1.25);
     }
 }
 
@@ -79,8 +80,7 @@
 }
 
 .pback,.yback,.blackback {
-    -webkit-box-shadow:0 0 2.5rem var(--shadow-colour);
-            box-shadow:0 0 2.5rem var(--shadow-colour);
+    box-shadow:0 0 2.5rem var(--shadow-colour);
 }
 
 /* Alignments */
@@ -317,23 +317,16 @@ hr {
 }
 
 .fill {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
 }
 
 .fill img {
     -o-object-fit: cover;
        object-fit: cover;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
 }
@@ -419,7 +412,9 @@ hr {
 
 /* Don't allow image dragging */
 img, img::after, img::before {
-    user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
     -webkit-user-select: none;
     -webkit-user-drag: none;
     -webkit-app-region: no-drag;
@@ -432,22 +427,18 @@ img, img::after, img::before {
 }
 @-webkit-keyframes rotation {
     from {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-        -webkit-transform: rotate(359deg);
-                transform: rotate(359deg);
+        transform: rotate(359deg);
     }
 }
 @keyframes rotation {
     from {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-        -webkit-transform: rotate(359deg);
-                transform: rotate(359deg);
+        transform: rotate(359deg);
     }
 }
 
@@ -461,7 +452,6 @@ img, img::after, img::before {
     height: 0;
     width: 0;
     border-radius: 5px;
-    -webkit-transition-duration: .2s;
     transition-duration: .2s
 }
 
@@ -487,7 +477,6 @@ img, img::after, img::before {
 
 ::-webkit-scrollbar-button:vertical:decrement {
     border-radius: 0;
-    -webkit-transition-duration: .2s;
     transition-duration: .2s
 }
 
@@ -497,7 +486,6 @@ img, img::after, img::before {
 
 ::-webkit-scrollbar-button:vertical:increment {
     border-radius: 0;
-    -webkit-transition-duration: .2s;
     transition-duration: .2s
 }
 
