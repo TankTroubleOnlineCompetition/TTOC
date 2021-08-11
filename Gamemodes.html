@@ -2,489 +2,489 @@
 <html lang="en">
 
 <head>
-    <title>TankTrouble Online Competition</title>
+	<title>TankTrouble Online Competition</title>
 
-    <link rel="icon" href="media/icons/fav.png" />
+	<link rel="icon" href="media/icons/fav.png" />
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="js/fetcher.js"></script>
-    <script src="js/dynamictanks.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="js/fetcher.js"></script>
+	<script src="js/dynamictanks.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <div id="top"></div>
-
-    <div class="main">
-        <div class="yback row center">
-            <div class="col-sm-4 row textdivmargin">
-                <div class="col-sm-4 divpad">
-                    <img class="rotate" src="media/powerups/rbullet.png" loading="lazy" />
-                </div>
-
-                <div class="col-sm-4 divpad">
-                    <img class="rotate" src="media/powerups/rlaser.png" loading="lazy" />
-                </div>
-
-                <div class="col-sm-4 divpad">
-                    <img class="rotate" src="media/powerups/rdt.png" loading="lazy" />
-                </div>
-            </div>
-
-            <div class="col-sm-4 textdivmargin divpad">
-                <h1 class="center textpad">Official Gamemodes</h1>
-
-                <p class="justify textpad">
-                    TTOC is all about variety. That's why we have four gamemodes for
-                    players to compete in, to test players' skills. Each gamemode
-                    targets a different group of skills, while the Classic gamemode is
-                    an overall test. The gamemodes are played one after the other in
-                    TTOC, and each has its own separate sign up period. Depending on
-                    popularity, the gamemodes will be played in either 16 or 32 player
-                    single-elimination.
-                </p>
-            </div>
-
-            <div class="col-sm-4 row textdivmargin">
-                <div class="col-sm-4 divpad">
-                    <img class="rotate" src="media/powerups/rshotgun.png" loading="lazy" />
-                </div>
-
-                <div class="col-sm-4 divpad">
-                    <img class="rotate" src="media/powerups/rshield.png" loading="lazy" />
-                </div>
-
-                <div class="col-sm-4 divpad">
-                    <img class="rotate" src="media/powerups/rhoming.png" loading="lazy" />
-                </div>
-            </div>
-        </div>
-
-        <div class="pback row">
-            <div class="col-sm-4 textdivmargin textpad divpad">
-                <h1 class="center">Classic</h1>
-
-                <p class="justify">
-                    The all-round favourite, classic gamemode. Putting overall skill to
-                    the test, this gamemode is the easiest to follow: survive by any
-                    means necessary in the TankTrouble Mazes!
-                </p>
-
-                <ul>
-                    <li>A normal battle with all the weapons and bullets.</li>
-                    <li>A round begins when Spectator tanks are destroyed.</li>
-                    <li>First to 15 wins with a 2 win difference.</li>
-                </ul>
-            </div>
-
-            <div class="col-sm-1 textdivmargin nopad">
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/bullet.png" loading="lazy" />
-
-                    <img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/laser.png" loading="lazy" />
-
-                    <img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/dt.png" loading="lazy" />
-
-                    <img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
-                </div>
-            </div>
-
-            <div class="col-sm-2 textdivmargin textpad center divpad">
-                <h2 class="center">All bullets and weapons allowed</h2>
-
-                <img src="media/gamemodes/classic.png" loading="lazy" />
-            </div>
-
-            <div class="col-sm-1 textdivmargin nopad">
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/shotgun.png" loading="lazy" />
-
-                    <img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/shield.png" loading="lazy" />
-
-                    <img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/homing.png" loading="lazy" />
-
-                    <img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
-                </div>
-            </div>
-
-            <div class="col-sm-4 textdivmargin textpad center divpad">
-                <h2 class="center">
-                    Tanks starting the round after Spectators are destroyed
-                </h2>
-
-                <div class="row">
-                    <div class="col"></div>
-
-                    <div class="col-sm-9 center">
-                        <img src="media/mazes/classic.jpg" loading="lazy" />
-                    </div>
-
-                    <div class="col"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="yback row">
-            <div class="col-sm-4 textdivmargin textpad divpad">
-                <h1 class="center">Weapons</h1>
-
-                <p class="justify">
-                    Bullets are underkill. Destroy your opponent with the weapon of your
-                    choice. After all, that crate did spawn just for you! Go on... you
-                    know you want that weapon...
-                </p>
-
-                <ul>
-                    <li>A battle without bullets, only weapons from crates.</li>
-                    <li>Both players start with only one weapon loaded.</li>
-                    <li>
-                        Players will start in one of the outer corners of the maze, which
-                        they must "claim" by announcing it in chat while being in the
-                        corner with a weapon.
-                    </li>
-                    <li>
-                        Players may pick up and use all weapons infinitely after the round
-                        starts.
-                    </li>
-                    <li>
-                        Players may only pick up and dispose of weapons to clear paths and
-                        shields to allow spawns.
-                    </li>
-                    <li>
-                        A round begins when players are in their claimed corners with a
-                        weapon, and Spectator tanks are destroyed.
-                    </li>
-                    <li>First to 15 wins with a two win difference.</li>
-                </ul>
-            </div>
-
-            <div class="col-sm-1 textdivmargin nopad">
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/bullet.png" loading="lazy" />
-
-                    <img class="bottom-left" src="media/icons/reject.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/laser.png" loading="lazy" />
-
-                    <img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/dt.png" loading="lazy" />
-
-                    <img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
-                </div>
-            </div>
-
-            <div class="col-sm-2 textdivmargin center textpad divpad">
-                <h2 class="center">All weapons allowed, no regular bullets</h2>
-
-                <p class="center">Shields allowed only after match begins</p>
-
-                <img src="media/gamemodes/weapon.png" class="noShadow" loading="lazy" />
-            </div>
-
-            <div class="col-sm-1 textdivmargin nopad">
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/shotgun.png" loading="lazy" />
-
-                    <img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/shield.png" loading="lazy" />
-
-                    <img class="bottom-right" src="media/icons/lock.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/homing.png" loading="lazy" />
-
-                    <img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
-                </div>
-            </div>
-
-            <div class="col-sm-4 textdivmargin textpad center divpad">
-                <h2 class="center">
-                    Tanks starting in the farthest corners of the maze
-                </h2>
-
-                <div class="row">
-                    <div class="col"></div>
-
-                    <div class="col-sm-9">
-                        <img src="media/mazes/weapon.jpg" loading="lazy" />
-                    </div>
-
-                    <div class="col"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="pback row">
-            <div class="col-sm-4 textdivmargin textpad divpad">
-                <h1 class="center">Golf</h1>
-
-                <p class="justify">
-                    Five bullets are overkill. Slow down! Aim from where you are. The
-                    target: your opponent, of course. If you miss... well then, now
-                    you're the target. You can dodge by turning, but good luck with
-                    that!
-                </p>
-
-                <ul>
-                    <li>
-                        Players shoot at each other at the same time in a Ranked Classic
-                        Game by only using turning controls.
-                    </li>
-                    <li>
-                        Aiming, dodging and shooting is only allowed by pivoting on the
-                        spot. You may only move forward and back when travelling to your
-                        new shooting position.
-                    </li>
-                    <li>
-                        Each shooting period will be started 15 seconds after players have
-                        settled into their shooting position, with the spectator counting
-                        down to zero. The last 3 seconds of the countdown will be in chat.
-                    </li>
-                    <li>
-                        If both bullets despawn, each player will move to the location of
-                        their despawned bullet.
-                    </li>
-                    <li>
-                        If bullets despawn within a three-block radius of each other, the
-                        round is a draw.
-                    </li>
-                    <li>Dispose of weapons if necessary.</li>
-                    <li>
-                        If a player moves forward or back when not allowed, the opponent
-                        receives a point, and the round will not count.
-                    </li>
-                    <li>First to 10 wins with a two win difference.</li>
-                </ul>
-            </div>
-
-            <div class="col-sm-1 textdivmargin nopad">
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/bullet.png" loading="lazy" />
-
-                    <img class="bottom-left" src="media/icons/lock.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/laser.png" loading="lazy" />
-
-                    <img class="bottom-left" src="media/icons/reject.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/dt.png" loading="lazy" />
-
-                    <img class="bottom-left" src="media/icons/reject.png" loading="lazy" />
-                </div>
-            </div>
-
-            <div class="col-sm-2 textdivmargin center textpad divpad">
-                <h2 class="center">Only one bullet allowed at a time</h2>
-
-                <p class="center">Dispose of weapons to clear paths if necessary</p>
-
-                <img src="media/gamemodes/golf.png" loading="lazy" />
-            </div>
-
-            <div class="col-sm-1 textdivmargin nopad">
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/shotgun.png" loading="lazy" />
-
-                    <img class="bottom-right" src="media/icons/reject.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/shield.png" loading="lazy" />
-
-                    <img class="bottom-right" src="media/icons/reject.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/homing.png" loading="lazy" />
-
-                    <img class="bottom-right" src="media/icons/reject.png" loading="lazy" />
-                </div>
-            </div>
-
-            <div class="col-sm-4 textdivmargin textpad center divpad">
-                <h2 class="center">Shooter aiming for their target</h2>
-
-                <div class="row">
-                    <div class="col"></div>
-
-                    <div class="col-sm-9">
-                        <img src="media/mazes/golf.jpg" loading="lazy" />
-                    </div>
-
-                    <div class="col"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="yback row">
-            <div class="col-sm-4 textdivmargin textpad divpad" loading="lazy">
-                <h1 class="center">Gold Rush</h1>
-
-                <p class="justify">
-                    It's the 1840s. You're caught amidst the Siberian Gold Rush! You
-                    must fight for all the gold or receive a face full of lead. Rush for
-                    the gold or lose, which one will you choose?
-                </p>
-
-                <ul>
-                    <li>
-                        Played in Deathmatch mode, players must collect as many Dimitrium,
-                        gold coins, and kills as possible.
-                    </li>
-                    <li>
-                        Dimitrium is worth 6 points; gold coins are worth 3 points, and
-                        opponent deaths are worth 1 point.
-                    </li>
-                    <li>
-                        Prevent opponents from collecting points with all bullets and
-                        weapons.
-                    </li>
-                    <li>
-                        A round begins when Spectator tanks reach far corners of the maze,
-                        and the Spectator types "Go" in the chat.
-                    </li>
-                    <li>
-                        The player with the highest score after 15 rounds is the winner.
-                    </li>
-                    <li>
-                        Scores will be calculated after the match by a moderator-spectator
-                        through a player stats page.
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-sm-1 textdivmargin nopad">
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/bullet.png" loading="lazy" />
-
-                    <img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/laser.png" loading="lazy" />
-
-                    <img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/dt.png" loading="lazy" />
-
-                    <img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
-                </div>
-            </div>
-
-            <div class="col-sm-2 textdivmargin center textpad divpad">
-                <h2 class="center">All bullets and weapons allowed</h2>
-
-                <p class="center">
-                    You can destroy your tank to respawn closer to gold...
-                </p>
-
-                <img src="media/gamemodes/goldrush.png" loading="lazy" />
-            </div>
-
-            <div class="col-sm-1 textdivmargin nopad">
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/shotgun.png" loading="lazy" />
-
-                    <img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/shield.png" loading="lazy" />
-
-                    <img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
-                </div>
-
-                <div class="weaponunder textpad">
-                    <img src="media/powerups/homing.png" loading="lazy" />
-
-                    <img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
-                </div>
-            </div>
-
-            <div class="col-sm-4 textdivmargin textpad center divpad">
-                <h2 class="center">Players rushing for gold</h2>
-
-                <div class="row">
-                    <div class="col"></div>
-
-                    <div class="col-sm-9">
-                        <img src="media/mazes/goldrush.jpg" loading="lazy" />
-                    </div>
-
-                    <div class="col"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Community Gamemodes -->
-        <div class="pback row">
-            <div class="col-sm-3 center textdivmargin divpad textpad">
-                <img class="rotate" src="media/powerups/tankshield.png" loading="lazy" />
-            </div>
-
-            <div class="col-sm-6 center textdivmargin divpad center">
-                <h1>Official Gamemodes not enough?</h1>
-
-                <p>
-                    Check out these cool gamemodes made by the TankTrouble Community!
-                </p>
-
-                <p class="textdivmargin">
-                    <a class="btn btn-light" href="CommunityGamemodes.html" loading="lazy">
-                        See Community Gamemodes
-                    </a>
-                </p>
-            </div>
-
-            <div class="col-sm-3 center textdivmargin divpad textpad">
-                <img class="rotate" src="media/powerups/tankshield.png" loading="lazy" />
-            </div>
-        </div>
-    </div>
-
-    <div id="footer"></div>
+	<div id="top"></div>
+
+	<div class="main">
+		<div class="yback row center">
+			<div class="col-sm-4 row textdivmargin">
+				<div class="col-sm-4 divpad">
+					<img class="rotate" src="media/powerups/rbullet.png" loading="lazy" />
+				</div>
+
+				<div class="col-sm-4 divpad">
+					<img class="rotate" src="media/powerups/rlaser.png" loading="lazy" />
+				</div>
+
+				<div class="col-sm-4 divpad">
+					<img class="rotate" src="media/powerups/rdt.png" loading="lazy" />
+				</div>
+			</div>
+
+			<div class="col-sm-4 textdivmargin divpad">
+				<h1 class="center textpad">Official Gamemodes</h1>
+
+				<p class="justify textpad">
+					TTOC is all about variety. That's why we have four gamemodes for
+					players to compete in, to test players' skills. Each gamemode
+					targets a different group of skills, while the Classic gamemode is
+					an overall test. The gamemodes are played one after the other in
+					TTOC, and each has its own separate sign up period. Depending on
+					popularity, the gamemodes will be played in either 16 or 32 player
+					single-elimination.
+				</p>
+			</div>
+
+			<div class="col-sm-4 row textdivmargin">
+				<div class="col-sm-4 divpad">
+					<img class="rotate" src="media/powerups/rshotgun.png" loading="lazy" />
+				</div>
+
+				<div class="col-sm-4 divpad">
+					<img class="rotate" src="media/powerups/rshield.png" loading="lazy" />
+				</div>
+
+				<div class="col-sm-4 divpad">
+					<img class="rotate" src="media/powerups/rhoming.png" loading="lazy" />
+				</div>
+			</div>
+		</div>
+
+		<div class="pback row">
+			<div class="col-sm-4 textdivmargin textpad divpad">
+				<h1 class="center">Classic</h1>
+
+				<p class="justify">
+					The all-round favourite, classic gamemode. Putting overall skill to
+					the test, this gamemode is the easiest to follow: survive by any
+					means necessary in the TankTrouble Mazes!
+				</p>
+
+				<ul>
+					<li>A normal battle with all the weapons and bullets.</li>
+					<li>A round begins when Spectator tanks are destroyed.</li>
+					<li>First to 15 wins with a 2 win difference.</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-1 textdivmargin nopad">
+				<div class="weaponunder textpad">
+					<img src="media/powerups/bullet.png" loading="lazy" />
+
+					<img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/laser.png" loading="lazy" />
+
+					<img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/dt.png" loading="lazy" />
+
+					<img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
+				</div>
+			</div>
+
+			<div class="col-sm-2 textdivmargin textpad center divpad">
+				<h2 class="center">All bullets and weapons allowed</h2>
+
+				<img src="media/gamemodes/classic.png" loading="lazy" />
+			</div>
+
+			<div class="col-sm-1 textdivmargin nopad">
+				<div class="weaponunder textpad">
+					<img src="media/powerups/shotgun.png" loading="lazy" />
+
+					<img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/shield.png" loading="lazy" />
+
+					<img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/homing.png" loading="lazy" />
+
+					<img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
+				</div>
+			</div>
+
+			<div class="col-sm-4 textdivmargin textpad center divpad">
+				<h2 class="center">
+					Tanks starting the round after Spectators are destroyed
+				</h2>
+
+				<div class="row">
+					<div class="col"></div>
+
+					<div class="col-sm-9 center">
+						<img src="media/mazes/classic.jpg" loading="lazy" />
+					</div>
+
+					<div class="col"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="yback row">
+			<div class="col-sm-4 textdivmargin textpad divpad">
+				<h1 class="center">Weapons</h1>
+
+				<p class="justify">
+					Bullets are underkill. Destroy your opponent with the weapon of your
+					choice. After all, that crate did spawn just for you! Go on... you
+					know you want that weapon...
+				</p>
+
+				<ul>
+					<li>A battle without bullets, only weapons from crates.</li>
+					<li>Both players start with only one weapon loaded.</li>
+					<li>
+						Players will start in one of the outer corners of the maze, which
+						they must "claim" by announcing it in chat while being in the
+						corner with a weapon.
+					</li>
+					<li>
+						Players may pick up and use all weapons infinitely after the round
+						starts.
+					</li>
+					<li>
+						Players may only pick up and dispose of weapons to clear paths and
+						shields to allow spawns.
+					</li>
+					<li>
+						A round begins when players are in their claimed corners with a
+						weapon, and Spectator tanks are destroyed.
+					</li>
+					<li>First to 15 wins with a two win difference.</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-1 textdivmargin nopad">
+				<div class="weaponunder textpad">
+					<img src="media/powerups/bullet.png" loading="lazy" />
+
+					<img class="bottom-left" src="media/icons/reject.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/laser.png" loading="lazy" />
+
+					<img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/dt.png" loading="lazy" />
+
+					<img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
+				</div>
+			</div>
+
+			<div class="col-sm-2 textdivmargin center textpad divpad">
+				<h2 class="center">All weapons allowed, no regular bullets</h2>
+
+				<p class="center">Shields allowed only after match begins</p>
+
+				<img src="media/gamemodes/weapon.png" class="noShadow" loading="lazy" />
+			</div>
+
+			<div class="col-sm-1 textdivmargin nopad">
+				<div class="weaponunder textpad">
+					<img src="media/powerups/shotgun.png" loading="lazy" />
+
+					<img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/shield.png" loading="lazy" />
+
+					<img class="bottom-right" src="media/icons/lock.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/homing.png" loading="lazy" />
+
+					<img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
+				</div>
+			</div>
+
+			<div class="col-sm-4 textdivmargin textpad center divpad">
+				<h2 class="center">
+					Tanks starting in the farthest corners of the maze
+				</h2>
+
+				<div class="row">
+					<div class="col"></div>
+
+					<div class="col-sm-9">
+						<img src="media/mazes/weapon.jpg" loading="lazy" />
+					</div>
+
+					<div class="col"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="pback row">
+			<div class="col-sm-4 textdivmargin textpad divpad">
+				<h1 class="center">Golf</h1>
+
+				<p class="justify">
+					Five bullets are overkill. Slow down! Aim from where you are. The
+					target: your opponent, of course. If you miss... well then, now
+					you're the target. You can dodge by turning, but good luck with
+					that!
+				</p>
+
+				<ul>
+					<li>
+						Players shoot at each other at the same time in a Ranked Classic
+						Game by only using turning controls.
+					</li>
+					<li>
+						Aiming, dodging and shooting is only allowed by pivoting on the
+						spot. You may only move forward and back when travelling to your
+						new shooting position.
+					</li>
+					<li>
+						Each shooting period will be started 15 seconds after players have
+						settled into their shooting position, with the spectator counting
+						down to zero. The last 3 seconds of the countdown will be in chat.
+					</li>
+					<li>
+						If both bullets despawn, each player will move to the location of
+						their despawned bullet.
+					</li>
+					<li>
+						If bullets despawn within a three-block radius of each other, the
+						round is a draw.
+					</li>
+					<li>Dispose of weapons if necessary.</li>
+					<li>
+						If a player moves forward or back when not allowed, the opponent
+						receives a point, and the round will not count.
+					</li>
+					<li>First to 10 wins with a two win difference.</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-1 textdivmargin nopad">
+				<div class="weaponunder textpad">
+					<img src="media/powerups/bullet.png" loading="lazy" />
+
+					<img class="bottom-left" src="media/icons/lock.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/laser.png" loading="lazy" />
+
+					<img class="bottom-left" src="media/icons/reject.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/dt.png" loading="lazy" />
+
+					<img class="bottom-left" src="media/icons/reject.png" loading="lazy" />
+				</div>
+			</div>
+
+			<div class="col-sm-2 textdivmargin center textpad divpad">
+				<h2 class="center">Only one bullet allowed at a time</h2>
+
+				<p class="center">Dispose of weapons to clear paths if necessary</p>
+
+				<img src="media/gamemodes/golf.png" loading="lazy" />
+			</div>
+
+			<div class="col-sm-1 textdivmargin nopad">
+				<div class="weaponunder textpad">
+					<img src="media/powerups/shotgun.png" loading="lazy" />
+
+					<img class="bottom-right" src="media/icons/reject.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/shield.png" loading="lazy" />
+
+					<img class="bottom-right" src="media/icons/reject.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/homing.png" loading="lazy" />
+
+					<img class="bottom-right" src="media/icons/reject.png" loading="lazy" />
+				</div>
+			</div>
+
+			<div class="col-sm-4 textdivmargin textpad center divpad">
+				<h2 class="center">Shooter aiming for their target</h2>
+
+				<div class="row">
+					<div class="col"></div>
+
+					<div class="col-sm-9">
+						<img src="media/mazes/golf.jpg" loading="lazy" />
+					</div>
+
+					<div class="col"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="yback row">
+			<div class="col-sm-4 textdivmargin textpad divpad" loading="lazy">
+				<h1 class="center">Gold Rush</h1>
+
+				<p class="justify">
+					It's the 1840s. You're caught amidst the Siberian Gold Rush! You
+					must fight for all the gold or receive a face full of lead. Rush for
+					the gold or lose, which one will you choose?
+				</p>
+
+				<ul>
+					<li>
+						Played in Deathmatch mode, players must collect as many Dimitrium,
+						gold coins, and kills as possible.
+					</li>
+					<li>
+						Dimitrium is worth 6 points; gold coins are worth 3 points, and
+						opponent deaths are worth 1 point.
+					</li>
+					<li>
+						Prevent opponents from collecting points with all bullets and
+						weapons.
+					</li>
+					<li>
+						A round begins when Spectator tanks reach far corners of the maze,
+						and the Spectator types "Go" in the chat.
+					</li>
+					<li>
+						The player with the highest score after 15 rounds is the winner.
+					</li>
+					<li>
+						Scores will be calculated after the match by a moderator-spectator
+						through a player stats page.
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-1 textdivmargin nopad">
+				<div class="weaponunder textpad">
+					<img src="media/powerups/bullet.png" loading="lazy" />
+
+					<img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/laser.png" loading="lazy" />
+
+					<img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/dt.png" loading="lazy" />
+
+					<img class="bottom-left" src="media/icons/approve.png" loading="lazy" />
+				</div>
+			</div>
+
+			<div class="col-sm-2 textdivmargin center textpad divpad">
+				<h2 class="center">All bullets and weapons allowed</h2>
+
+				<p class="center">
+					You can destroy your tank to respawn closer to gold...
+				</p>
+
+				<img src="media/gamemodes/goldrush.png" loading="lazy" />
+			</div>
+
+			<div class="col-sm-1 textdivmargin nopad">
+				<div class="weaponunder textpad">
+					<img src="media/powerups/shotgun.png" loading="lazy" />
+
+					<img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/shield.png" loading="lazy" />
+
+					<img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
+				</div>
+
+				<div class="weaponunder textpad">
+					<img src="media/powerups/homing.png" loading="lazy" />
+
+					<img class="bottom-right" src="media/icons/approve.png" loading="lazy" />
+				</div>
+			</div>
+
+			<div class="col-sm-4 textdivmargin textpad center divpad">
+				<h2 class="center">Players rushing for gold</h2>
+
+				<div class="row">
+					<div class="col"></div>
+
+					<div class="col-sm-9">
+						<img src="media/mazes/goldrush.jpg" loading="lazy" />
+					</div>
+
+					<div class="col"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Community Gamemodes -->
+		<div class="pback row">
+			<div class="col-sm-3 center textdivmargin divpad textpad">
+				<img class="rotate" src="media/powerups/tankshield.png" loading="lazy" />
+			</div>
+
+			<div class="col-sm-6 center textdivmargin divpad center">
+				<h1>Official Gamemodes not enough?</h1>
+
+				<p>
+					Check out these cool gamemodes made by the TankTrouble Community!
+				</p>
+
+				<p class="textdivmargin">
+					<a class="btn btn-light" href="CommunityGamemodes.html" loading="lazy">
+						See Community Gamemodes
+					</a>
+				</p>
+			</div>
+
+			<div class="col-sm-3 center textdivmargin divpad textpad">
+				<img class="rotate" src="media/powerups/tankshield.png" loading="lazy" />
+			</div>
+		</div>
+	</div>
+
+	<div id="footer"></div>
 </body>
 
 </html>
