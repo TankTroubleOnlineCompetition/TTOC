@@ -1,4 +1,4 @@
-(function(){
+(function () {
     fetch('templates/footer.html').then(response => response.text()).then(footer => {
         $('#footer').append(footer);
     });
