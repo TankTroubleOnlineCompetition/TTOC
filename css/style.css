@@ -77,6 +77,12 @@
                 filter: invert(1) brightness(1.25);
     }
 }
+* {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
 
 /* Add class noShadow to images that should not have the drop shadow */
 .divpad img:not(.noShadow) { 
