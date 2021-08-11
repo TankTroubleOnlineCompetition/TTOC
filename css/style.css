@@ -208,7 +208,7 @@ a {
     font-family: 'TankTrouble', sans-serif;
     text-decoration: none;
     font-size: 1rem;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 0.0625rem black;
 }
 
 a:hover {
@@ -237,13 +237,13 @@ li {
 h1 {
     font-family: 'TankTrouble', sans-serif;
     font-size: 2rem;
-    -webkit-text-stroke: 1.5px black;
+    -webkit-text-stroke: 0.09375rem black;
 }
 
 h2 {
     font-family: 'TankTrouble', sans-serif;
     font-size: 1.25rem;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 0.0625rem black;
 }
 
 .ttfont {
@@ -285,13 +285,13 @@ h2 {
 .rbtn {
     background-color: var(--first-bg) ;
     color: var(--sec-theme-colour) !important;
-    border: 2px solid var(--sec-theme-colour);
+    border: 0.125rem solid var(--sec-theme-colour);
 }
 
 .rbtn:hover {
     background-color: var(--sec-bg);
     color: var(--first-theme-colour) !important;
-    border: 2px solid var(--first-theme-colour);
+    border: 0.125rem solid var(--first-theme-colour);
 }
 
 
@@ -456,14 +456,14 @@ img, img::after, img::before {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-    width: 10px
+    width: 0.625rem;
 }
 
 ::-webkit-scrollbar-button {
     background-color: #353535;
     height: 0;
     width: 0;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     transition-duration: .2s
 }
 
@@ -476,9 +476,9 @@ img, img::after, img::before {
 }
 
 ::-webkit-scrollbar-thumb {
-    height: 50px;
+    height: 3.125rem;
     background-color: #5a5a5a;
-    border-radius: 2px;
+    border-radius: 0.125rem;
     -webkit-transition: 1s;
     transition: 1s
 }
