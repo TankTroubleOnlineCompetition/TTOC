@@ -1,4 +1,6 @@
 (function () {
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
     fetch('templates/footer.html').then(response => response.text()).then(footer => {
         $('#footer').append(footer);
     });
