@@ -6,7 +6,7 @@
     url('../media/fonts/TankTrouble.woff2') format('woff2'),
     url('../media/fonts/TankTrouble.woff') format('woff'),
     url('../media/fonts/TankTrouble.ttf')  format('truetype'),
-    url('../media/fonts/TankTrouble.svg') format('svg');;
+    url('../media/fonts/TankTrouble.svg') format('svg');
 }
 
 /*
@@ -471,7 +471,7 @@ img, img::after, img::before {
 }
 
 ::-webkit-scrollbar-track-piece {
-    background-color: #5d2785;
+    background-color: #281535;
 }
 
 ::-webkit-scrollbar-thumb {
