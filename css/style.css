@@ -26,7 +26,7 @@
         --yellow: #b8860b; 
         --purple: #441d4a;
 
-        --button-yellow: #c09e36;
+        --button-yellow: var(--yellow);
 
         --first-bg: var(--yellow);
         --first-title: #000;
@@ -44,6 +44,9 @@
     a.btn-dark, a.btn-light {
         -webkit-text-stroke: 0 !important;
     }
+    .whiteback h1, .whiteback h2, .whiteback a, .whiteback a:visited, .blackback a:hover  {
+        color: var(--sec-text) !important;
+    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -53,6 +56,8 @@
 
         --yellow: #F1C439; 
         --purple: #6e25a4;
+
+        --button-yellow: var(--yellow);
 
         --first-bg: var(--yellow);
         --first-title: #000;
