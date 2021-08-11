@@ -70,7 +70,7 @@ if (true) {
 
 //How it works:
 //Adds neccessary functions to the webpage. Upon window load, it will loop through all player details and add them to a cache.
-//Then, it will look for images in the DOM having the source name of the player's username (eg it will find all instances of Commander.png when looking for Commander)
+//Then, it will look for img elements in the DOM having the source name of the player's username (eg it will find all instances of src="..../Commander.png" when looking for Commander)
 //It will cycle through all the images found and will then generate a canvas with the player details.
 //g_url is generated in a hacky way. It fetches the TankTrouble site and finds the script tag mentioning the release version. It seperates the version and stores it in the version variable which is used in the function.
 
