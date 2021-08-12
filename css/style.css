@@ -360,7 +360,7 @@ hr {
 
 .fbtn:hover {
 	background-color: var(--first-bg) ;
-	color: var(--sec-theme-colour) !important;
+	color: var(--sec-text) !important;
 	border: 0.125rem solid var(--sec-theme-colour);
 }
 
