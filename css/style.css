@@ -349,7 +349,9 @@ hr {
     border-top: 0.9375rem solid var(--sec-theme-colour);
     word-wrap: break-word;
 }
-
+#footer {
+    box-shadow: 0 0 2.5rem var(--shadow-colour);
+}
 .fbtn {
     background-color: var(--sec-bg);
     color: var(--first-theme-colour) !important;
